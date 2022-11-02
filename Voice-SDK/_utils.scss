@@ -1,0 +1,25 @@
+@mixin link_property {
+  text-decoration: none;
+  color: $color-1;
+  font-size: $font-16;
+  font-weight: $font-600;
+}
+@mixin text-property($fs, $fw, $fc) {
+  font-size: $fs;
+  font-weight: $fw;
+  color: $fc;
+}
+@mixin btn_property($bg, $padding, $border) {
+  background-color: $bg;
+  padding: $padding;
+  border: $border;
+}
+@mixin blank_property($matrix) {
+  transform: $matrix;
+  width: 170px;
+  height: 283px;
+  position: absolute;
+  background: transparent
+    linear-gradient(89deg, $color-7 0%, $color-5 49%, $color-5 100%) 0% 0%
+    no-repeat padding-box;
+}
